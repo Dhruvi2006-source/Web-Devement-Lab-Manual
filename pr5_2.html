@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advanced JavaScript Practical</title>
+</head>
+<body>
+
+<h2>Advanced JavaScript Practical</h2>
+
+<h3>Student Information</h3>
+
+<p id="studentName"></p>
+<p id="studentMarks"></p>
+<p id="studentBranch"></p>
+<p id="studentResult"></p>
+
+<button onclick="showDetails()">Show Student Details</button>
+
+<script>
+
+// Object
+let student =
+{
+    name: "Dhruvi",
+    marks: 85,
+    branch: "Computer Engineering"
+};
+
+// Function
+function showDetails()
+{
+    // DOM Reference using getElementById()
+    document.getElementById("studentName").innerHTML =
+        "Name : " + student.name;
+
+    document.getElementById("studentMarks").innerHTML =
+        "Marks : " + student.marks;
+
+    document.getElementById("studentBranch").innerHTML =
+        "Branch : " + student.branch;
+
+    // Condition
+    if(student.marks >= 35)
+    {
+        document.getElementById("studentResult").innerHTML =
+            "Result : Pass";
+    }
+    else
+    {
+        document.getElementById("studentResult").innerHTML =
+            "Result : Fail";
+    }
+}
+
+</script>
+
+</body>
+</html>

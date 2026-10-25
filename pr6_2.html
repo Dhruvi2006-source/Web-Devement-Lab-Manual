@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Prac-6.2</title>
+  </head>
+  <body>
+    <h2>JavaScript RegEx and Validations</h2>
+    <input type="text" id="name" />
+    <button onclick="validateName()">Validate</button>
+    <p id="result"></p>
+  </body>
+  <script>
+    function validateName() {
+      let name = document.getElementById("name").value;
+      let pattern = /^[A-Za-z0-9]+$/;
+      if (pattern.test(name)) {
+        document.getElementById("result").innerHTML = "Valid Name";
+      } else {
+        document.getElementById("result").innerHTML = "Invalid Name";
+      }
+    }
+  </script>
+</html>

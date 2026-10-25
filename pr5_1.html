@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic JavaScript Practical</title>
+</head>
+<body>
+
+<h2>JavaScript Practical</h2>
+
+<script>
+
+// Alert
+alert("Welcome to JavaScript Practical");
+
+// Variables
+let student = "Dhruvi";
+let marks = 85;
+
+// Display data
+document.write("<h3>Student Information</h3>");
+document.write("Name : " + student + "<br>");
+document.write("Marks : " + marks + "<br><br>");
+
+// Function
+function result()
+{
+    if(marks >= 35)
+    {
+        document.write("Result : Pass<br><br>");
+    }
+    else
+    {
+        document.write("Result : Fail<br><br>");
+    }
+}
+
+result();
+
+// Array
+let subjects = ["JavaScript", "Database Management", "Computer Networks"];
+
+// Loop
+document.write("<h3>Subjects</h3>");
+
+for(let i = 0; i < subjects.length; i++)
+{
+    document.write(subjects[i] + "<br>");
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Practical 4_3</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: "Times New Roman";
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Parent Element</h1>
+    </div>
+</body>
+</html> -->
+
+<!doctype html>
+<html>
+  <head>
+    <title>Practical 4_3</title>
+    <style>
+      body {
+        font-family: Calibri;
+        background: #f5f5f5;          
+        text-align: center;
+      }
+
+      .container {
+        position: relative;
+        width: 500px;
+        height: 400px;
+        border: 3px solid black;
+        margin: 40px auto;
+        background: #c1dcf8e8;
+      }
+
+      .relative-box {
+        position: relative;
+        left: 70px;
+        top: 30px;
+        width: 150px;
+        height: 100px;
+        background: rgb(47, 0, 255);
+        color: white;
+    
+        line-height: 80px;
+      }
+
+      .absolute-box {
+        position: absolute;
+        top: 120px;
+        left: 180px;
+        width: 180px;
+        height: 100px;
+        background: rgb(30, 255, 0);
+        color: rgb(162, 0, 255);
+        line-height: 100px;
+      }
+
+      .blue-box {
+        position: absolute;
+        top: 200px;
+        left: 230px;
+        width: 160px;
+        height: 90px;
+        background: rgb(255, 0, 242);
+        color: white;
+    
+        line-height: 90px;
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 align="center">Practical 4_3</h2>
+    <div class="container">
+      <div class="relative-box">Relative Box</div>
+      <div class="absolute-box">Absolute Box</div>
+      <div class="blue-box">Z-index Box</div>
+    </div>
+  </body>
+</html>

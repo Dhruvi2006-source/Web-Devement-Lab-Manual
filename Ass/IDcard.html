@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>College ID Card</title>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e9e9e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .id-card {
+    width: 340px;
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+    border: 1px solid #ccc;
+  }
+
+  /* ---------- Header ---------- */
+  .header {
+    text-align: center;
+    padding: 14px 10px 8px;
+  }
+
+  .header .logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6px;
+  }
+
+  .header .logos img {
+    height: 42px;
+  }
+
+  .college-name {
+    font-size: 26px;
+    font-weight: 800;
+    color: #1a1a1a;
+    letter-spacing: 1px;
+    margin-top: -30px;
+  }
+
+  .college-tagline {
+    font-size: 10px;
+    font-weight: 700;
+    color: #d94f0b;
+    letter-spacing: 0.5px;
+  }
+
+  .university-name {
+    font-size: 11px;
+    font-weight: 700;
+    color: #1a3fa0;
+    margin-top: 6px;
+  }
+
+  .address {
+    font-size: 10.5px;
+    font-weight: 700;
+    color: #111;
+    line-height: 1.5;
+    margin-top: 4px;
+  }
+
+  /* ---------- Photo band ---------- */
+  .photo-section {
+    position: relative;
+    background: linear-gradient(180deg, #bfe4f2 0%, #4fa8d8 55%, #1c6fae 100%);
+    padding: 16px 0 14px;
+    text-align: center;
+  }
+
+  .photo-frame {
+    width: 120px;
+    height: 140px;
+    background: #fff;
+    border: 3px solid #fff;
+    margin: 0 auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  }
+
+  .photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* ---------- Details band ---------- */
+  .details {
+    background: linear-gradient(180deg, #1c6fae 0%, #12507f 100%);
+    color: #fff;
+    text-align: center;
+    padding: 14px 12px 18px;
+  }
+
+  .student-name {
+    font-size: 17px;
+    font-weight: 800;
+    margin-bottom: 8px;
+  }
+
+  .branch {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .enrolment {
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+   /* ---------- Signature / validity ---------- */
+  .sign-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px 16px 4px;
+  }
+ 
+  .sign-row .signature svg {
+    height: 34px;
+    width: 90px;
+  }
+ 
+  .sign-row .label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #111;
+    text-align: center;
+  }
+ 
+  .valid-through {
+    font-size: 12px;
+    font-weight: 700;
+    color: #111;
+    text-align: right;
+  }
+ 
+  /* ---------- Barcode ---------- */
+  .barcode-section {
+    text-align: center;
+    padding: 6px 0 4px;
+  }
+ 
+  .barcode-bars {
+    display: inline-flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 45px;
+    gap: 2px;
+  }
+ 
+  .barcode-bars span {
+    display: inline-block;
+    background: #111;
+    width: 2px;
+    height: 100%;
+  }
+ 
+  .barcode-bars span:nth-child(3n) { width: 3px; }
+  .barcode-bars span:nth-child(5n) { height: 85%; }
+  .barcode-bars span:nth-child(7n) { height: 95%; }
+ 
+  .barcode-number {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 2px;
+
+  /* ---------- Footer ---------- */
+  .footer {
+    background: #f5c400;
+    text-align: center;
+    padding: 6px 0;
+  }
+
+  .footer span {
+    font-size: 14px;
+    font-weight: 800;
+    color: #111;
+  }
+</style>
+</head>
+<body>
+
+  <div class="id-card">
+
+    <!-- Header -->
+    <div class="header">
+      <div class="logos">
+        <img src="left-logo.png" alt="Left Logo">
+        <img src="right-logo.png" alt="Right Logo">
+      </div>
+      <div class="college-name">GCET</div>
+      <div class="college-tagline">G H PATEL COLLEGE OF<br>ENGINEERING &amp; TECHNOLOGY</div>
+      <div class="university-name">(The Charutar Vidya Mandal (CVM) University)</div>
+      <div class="address">
+        Bakrol Road, Vallabh Vidyanagar - 388 120 Gujarat<br>
+        Phone : (02692) 231651<br>
+        Email: principal@gcet.ac.in, Web : www.gcet.ac.in
+      </div>
+    </div>
+
+    <!-- Photo -->
+    <div class="photo-section">
+      <div class="photo-frame">
+        <img src="student-photo.jpg" alt="Student Photo">
+      </div>
+    </div>
+
+    <!-- Student details -->
+    <div class="details">
+      <div class="student-name">Patel Dhruvi Rakeshkumar</div>
+      <div class="branch">Computer Engineering</div>
+      <div class="enrolment">Enrolment No. : 12402040501020</div>
+    </div>
+
+   
+    <!-- Signature and validity -->
+    <div class="sign-row">
+      <div class="signature">
+        <svg viewBox="0 0 100 40" aria-label="Signature">
+          <path d="M5 30 C 15 5, 25 35, 35 15 S 55 5, 60 25 S 75 10, 85 20 S 95 30, 98 18"
+                fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <div class="label">Principal</div>
+      </div>
+      <div class="valid-through">Valid Through : 30-06-2028</div>
+    </div>
+ 
+    <!-- Barcode -->
+    <div class="barcode-section">
+      <div class="barcode-bars" aria-label="Barcode">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="barcode-number">12402040501020</div>
+    </div>
+ 
+    <!-- Footer -->
+    <div class="footer">
+      <span>www.cvmu.edu.in</span>
+    </div>
+
+  </div>
+
+</body>
+</html>
